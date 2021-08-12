@@ -45,7 +45,7 @@ public class Order {
     private LocalDate dateOfOrder;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "USER_ID")
+    @JoinColumn(name = "USER")
     private User user;
 
     @ManyToMany
